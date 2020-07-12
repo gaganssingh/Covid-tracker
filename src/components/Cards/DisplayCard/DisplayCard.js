@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+
 import CountUp from "react-countup";
 import classes from "./DisplayCard.module.css";
 import Spinner from "../../../ui/Spinner";
@@ -7,8 +8,9 @@ import Spinner from "../../../ui/Spinner";
 const DisplayCard = (props) => {
    let renderData = <Spinner />;
 
+   // Dynamic css styles; based on the type of
+   // data to be displayed in the card
    let style = null;
-
    if (props.class === "infected") {
       style = {
          border: "5px solid rgba(0, 0, 255, 0.7)",

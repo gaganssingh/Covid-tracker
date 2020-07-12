@@ -11,6 +11,7 @@ const App = () => {
    const [data, setData] = useState({});
    const [country, setCountry] = useState("");
 
+   // Runs once when the application first loads
    useEffect(() => {
       const getData = async () => {
          const response = await fetchData();
@@ -20,8 +21,12 @@ const App = () => {
       getData();
    }, []);
 
+   // When user selects a country from dropdown
+   // fetch country specific data
    const countrySelectionHandler = async (selectedCountry) => {
       const getDataFromApi = await fetchData(selectedCountry);
+
+      // Update data and country properities in state
       setData(getDataFromApi);
       setCountry(selectedCountry);
    };

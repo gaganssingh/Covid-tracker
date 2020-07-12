@@ -7,6 +7,8 @@ import classes from "./CountrySelector.module.css";
 const CountrySelector = ({ onCountrySelection }) => {
    const [fetchedCountries, setFetchedCountries] = useState([]);
 
+   // Fetch the list of available countries in
+   // the database. Displayed as the select field options
    useEffect(() => {
       const fetchAPI = async () => {
          setFetchedCountries(await fetchCountries());

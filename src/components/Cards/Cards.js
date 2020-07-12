@@ -5,6 +5,7 @@ import classes from "./Cards.module.css";
 import DisplayCard from "./DisplayCard/DisplayCard";
 
 const Cards = ({ data }) => {
+   // Destructuring incoming data from props
    const { confirmed, recovered, deaths, lastUpdate } = data;
    return (
       <div className={classes.container}>
