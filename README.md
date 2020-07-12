@@ -7,7 +7,7 @@ COVID-19 is a React front end that fetches latest coronavirus statistics from an
 ### Features
 
 -  Upon first opening the site, current coronavirus statistics are displayed.
--  User can hover over the line chart and see exact numbers for a given date.
+-  User may hover over the line chart to see exact numbers for a given date.
 -  User may select a country from the dropdown to view the statistics for that country in a bar chart format
 
 ## Live page
