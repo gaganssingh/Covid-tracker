@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import coronaImage from "../images/corona-image.png";
 import { fetchData } from "../api/covidAPI";
+import Header from "./Header/Header";
 import Cards from "./Cards/Cards";
 import CountrySelector from "./CountrySelector/CountrySelector";
 import classes from "./App.module.css";
@@ -28,7 +28,7 @@ const App = () => {
 
    return (
       <div className={classes.container}>
-         <img src={coronaImage} className={classes.image} alt="COVID 19" />
+         <Header />
          <Cards data={data} />
          <CountrySelector onCountrySelection={countrySelectionHandler} />
          <Chart data={data} country={country} />

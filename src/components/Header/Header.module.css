@@ -1,0 +1,15 @@
+.header {
+   display: flex;
+   align-items: center;
+}
+
+.image {
+   width: 350px;
+   /* margin-top: 50px; */
+}
+
+@media (max-width: 770px) {
+   .image {
+      width: 100%;
+   }
+}
