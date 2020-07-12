@@ -2,6 +2,7 @@ import axios from "axios";
 
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
+// Fetch GLOBAL and COUNTRY specific stats
 export const fetchData = async (selectedCountry) => {
    let targetURL = BASE_URL;
 
@@ -24,6 +25,7 @@ export const fetchData = async (selectedCountry) => {
    }
 };
 
+// Fetch data for the Line Chart
 export const fetchDailyData = async () => {
    try {
       const { data } = await axios.get(`${BASE_URL}/daily`);
@@ -40,6 +42,7 @@ export const fetchDailyData = async () => {
    }
 };
 
+// Fetch the list of countries from the API
 export const fetchCountries = async () => {
    try {
       const {
