@@ -24,6 +24,8 @@ https://covid-tracker-rouge.vercel.app/
 
 ## API used:
 
-![Mobile](Screenshots/Mobile.png)
-
 https://github.com/mathdroid/covid-19-api
+
+## Screenshot
+
+![Mobile](Screenshots/Mobile.png)
